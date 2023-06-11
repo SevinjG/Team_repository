@@ -13,7 +13,10 @@ library(fastDummies)
 
 
 # Load data
-data <- read.csv('Data/kaggle_survey_2021_responses.csv', fileEncoding = 'UTF-8')
+# data <- read.csv('Data/kaggle_survey_2021_responses.csv', fileEncoding = 'UTF-8')
+# save(data, file = 'Data/kaggle_survey_2021_responses.RData')
+load('Data/kaggle_survey_2021_responses.RData')
+
 
 # Subset data with an initial list of a few features
 df <- data[, c(2:20, 128)]

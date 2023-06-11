@@ -14,8 +14,13 @@ library(randomForest)
 
 
 # Load data
-data_old <- read.csv('Data/kaggle_survey_2021_responses.csv', encoding = 'UTF-8')
-data_new <- read.csv('Data/kaggle_survey_2022_responses.csv', encoding = "UTF-8")
+load('Data/kaggle_survey_2021_responses.RData')
+data_old <- data
+rm(data)
+
+# data_new <- read.csv('Data/kaggle_survey_2022_responses.csv', encoding = "UTF-8")
+# save(data_new, file = 'Data/kaggle_survey_2022_responses.RData')
+load('Data/kaggle_survey_2022_responses.RData')
 
 ### Data Preparation --------------------------------------------------------------------------
 df_old <- data_old[, c(2:20, 128)]

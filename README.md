@@ -1,5 +1,11 @@
 # Group work: Predicting salary of the US data scientists
 
-Our project is about predicting the salary of US data scientists. We chose this topic and data from Kaggle. You can get it from:[here](https://www.kaggle.com/code/mabs003/predicting-salary-of-data-scientists)
-In the Kaggle the codes were written in Python and we converted the codes from Python to R which was one of our tasks in this project. If you look at the Original Research in our GitHub repository, you can see the comments about the written codes: how they work, their results, etc. 
-After converting the codes to R we tried the same codes on updated new data( kaggle_survey_2022_resposes.csv). You can get our csv files from "Data" folder in repository. In this process, we faced some errors but all of them have been corrected. Additionally, we add a new model: Random Forrest to our project and showed the necessary results. 
+In this project we will try to analyze and predict the salary of US data scientists. Our analysis is based on the publicly available analysis in Kaggle (https://www.kaggle.com/code/mabs003/predicting-salary-of-data-scientists/notebook). Our main aim is first to reproduce the results of the original analysis using R and then improve the study by updating the data and adding Random Forest for the prediction.
+
+File Structure:
+- Model folder: Data files and R codes are stored in this folder.
+  - Original Research.R - Reproduction of original analysis
+  - Updated Research.R - Updated version of analysis
+  - original_lm.RData - Reproduced original model
+
+- Report folder: Markdown and Html reports are stored in this folder.
